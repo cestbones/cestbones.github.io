@@ -1,2 +1,7 @@
 <title>C'est Bones!</title>
-<img src="tim.jpg">
+
+<script type="module">
+  import { load } from './lazyloader.js';
+
+  load('tim.jpg').then(img => document.body.appendChild(img));
+</script>
